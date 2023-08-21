@@ -23,7 +23,6 @@
 @import "blocks/title-second";
 @import "blocks/btn";
 
-
 // Global
 // ---------------------------------
 @import "global/utils";
@@ -64,7 +63,7 @@
       @content;
     }
   }
-*/
+*
 // и для active
 /*@mixin active {
     &.focus-visible:active {
