@@ -1,4 +1,5 @@
-import {iosVhFix} from './utils/ios-vh-fix';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { addEvtVideo } from './modules/play-button';
 
 // ---------------------------------
 
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  addEvtVideo();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

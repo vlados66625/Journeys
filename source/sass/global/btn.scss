@@ -1,0 +1,17 @@
+.btn {
+  display: inline-flex;
+  padding: 21px;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+  color: $color-default-white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: $color-royal-blue;
+  user-select: none;
+  box-sizing: border-box;
+}
