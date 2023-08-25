@@ -1,0 +1,72 @@
+.hero__container {
+  position: relative;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 22px;
+  max-width: 925px;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+  color: $color-default-white;
+  cursor: default;
+
+  @include vp-1199 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.hero p {
+  margin-top: 0;
+  margin-bottom: 37px;
+  max-width: 470px;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-default-white;
+  cursor: default;
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.hero__button {
+  margin-bottom: 150px;
+}
+
+.hero__descriptions-container {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__description-container {
+  padding: 14px 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero__description-container p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-default-white;
+  cursor: default;
+}
+
+.hero__video-contaner {
+  position: absolute;
+  right: 0;
+  top: 119px;
+}

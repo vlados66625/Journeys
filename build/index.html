@@ -31,61 +31,9 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-      <div class="swiper main-header__swiper-hero">
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide">
-            <picture>
-              <source media="(max-width:767px)" type="image/webp"
-                srcset="./img/header/hero-photo-1/hero-photo-1@1x-mobile.webp 1x, ./img/header/hero-photo-1/hero-photo-1@2x-mobile.webp 2x">
-              <source media="(max-width:1199px)" type="image/webp"
-                srcset="./img/header/hero-photo-1/hero-photo-1@1x-tablet.webp 1x, ./img/header/hero-photo-1/hero-photo-1@2x-tablet.webp 2x">
-              <source type="image/webp"
-                srcset="./img/header/hero-photo-1/hero-photo-1@1x-desktop.webp 1x, ./img/header/hero-photo-1/hero-photo-1@2x-desktop.webp 2x">
-              <source media="(max-width:767px)"
-                srcset="./img/header/hero-photo-1/hero-photo-1@1x-mobile.jpg 1x, ./img/header/hero-photo-1/hero-photo-1@2x-mobile.jpg 2x">
-              <source media="(max-width:1199px)"
-                srcset="./img/header/hero-photo-1/hero-photo-1@1x-tablet.jpg 1x, ./img/header/hero-photo-1/hero-photo-1@2x-tablet.jpg 2x">
-              <img src="./img/header/hero-photo-1/hero-photo-1@1x-desktop.jpg"
-                srcset="./img/header/hero-photo-1/hero-photo-1@2x-desktop.jpg 2x" alt="">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source media="(max-width:767px)" type="image/webp"
-                srcset="./img/header/hero-photo-2/hero-photo-2@1x-mobile.webp 1x, ./img/header/hero-photo-2/hero-photo-2@2x-mobile.webp 2x">
-              <source media="(max-width:1199px)" type="image/webp"
-                srcset="./img/header/hero-photo-2/hero-photo-2@1x-tablet.webp 1x, ./img/header/hero-photo-2/hero-photo-2@2x-tablet.webp 2x">
-              <source type="image/webp"
-                srcset="./img/header/hero-photo-2/hero-photo-2@1x-desktop.webp 1x, ./img/header/hero-photo-2/hero-photo-2@2x-desktop.webp 2x">
-              <source media="(max-width:767px)"
-                srcset="./img/header/hero-photo-2/hero-photo-2@1x-mobile.jpg 1x, ./img/header/hero-photo-2/hero-photo-2@2x-mobile.jpg 2x">
-              <source media="(max-width:1199px)"
-                srcset="./img/header/hero-photo-2/hero-photo-2@1x-tablet.jpg 1x, ./img/header/hero-photo-2/hero-photo-2@2x-tablet.jpg 2x">
-              <img src="./img/header/hero-photo-2/hero-photo-2@1x-desktop.jpg"
-                srcset="./img/header/hero-photo-2/hero-photo-2@2x-desktop.jpg 2x" alt="">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source media="(max-width:767px)" type="image/webp"
-                srcset="./img/header/hero-photo-3/hero-photo-3@1x-mobile.webp 1x, ./img/header/hero-photo-3/hero-photo-3@2x-mobile.webp 2x">
-              <source media="(max-width:1199px)" type="image/webp"
-                srcset="./img/header/hero-photo-3/hero-photo-3@1x-tablet.webp 1x, ./img/header/hero-photo-3/hero-photo-3@2x-tablet.webp 2x">
-              <source type="image/webp"
-                srcset="./img/header/hero-photo-3/hero-photo-3@1x-desktop.webp 1x, ./img/header/hero-photo-3/hero-photo-3@2x-desktop.webp 2x">
-              <source media="(max-width:767px)"
-                srcset="./img/header/hero-photo-3/hero-photo-3@1x-mobile.jpg 1x, ./img/header/hero-photo-3/hero-photo-3@2x-mobile.jpg 2x">
-              <source media="(max-width:1199px)"
-                srcset="./img/header/hero-photo-3/hero-photo-3@1x-tablet.jpg 1x, ./img/header/hero-photo-3/hero-photo-3@2x-tablet.jpg 2x">
-              <img src="./img/header/hero-photo-3/hero-photo-3@1x-desktop.jpg"
-                srcset="./img/header/hero-photo-3/hero-photo-3@2x-desktop.jpg 2x" alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="main-header__wrapper">
-          <div class="main-header__header-top header-top">
+      <div class="main-header__header-top header-top">
+        <div class="container container--header-top">
+          <div class="header-top__container">
             <a class="header-top__logo" href="./index.html">
               <svg width="205" height="62" focusable="false" aria-hidden="true">
                 <use href="./img/sprite.svg#logo"></use>
@@ -117,23 +65,44 @@
               <a href="tel:+7807253232">8 800 725 32 32</a>
             </div>
           </div>
-          <div class="swiper main-header__header-bottom header-bottom swiper-hero">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="header-bottom__container">
+        </div>
+      </div>
+      <div class="swiper main-header__header-bottom header-bottom">
+        <div class="swiper-wrapper header-bottom__swiper-wrapper">
+          <div class="swiper-slide header-bottom__swiper-slide">
+            <div class="header-bottom__background-img">
+              <picture>
+                <source media="(max-width:767px)" type="image/webp"
+                  srcset="./img/header/hero-photo-1/hero-photo-1@1x-mobile.webp 1x, ./img/header/hero-photo-1/hero-photo-1@2x-mobile.webp 2x">
+                <source media="(max-width:1199px)" type="image/webp"
+                  srcset="./img/header/hero-photo-1/hero-photo-1@1x-tablet.webp 1x, ./img/header/hero-photo-1/hero-photo-1@2x-tablet.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/header/hero-photo-1/hero-photo-1@1x-desktop.webp 1x, ./img/header/hero-photo-1/hero-photo-1@2x-desktop.webp 2x">
+                <source media="(max-width:767px)"
+                  srcset="./img/header/hero-photo-1/hero-photo-1@1x-mobile.jpg 1x, ./img/header/hero-photo-1/hero-photo-1@2x-mobile.jpg 2x">
+                <source media="(max-width:1199px)"
+                  srcset="./img/header/hero-photo-1/hero-photo-1@1x-tablet.jpg 1x, ./img/header/hero-photo-1/hero-photo-1@2x-tablet.jpg 2x">
+                <img src="./img/header/hero-photo-1/hero-photo-1@1x-desktop.jpg"
+                  srcset="./img/header/hero-photo-1/hero-photo-1@2x-desktop.jpg 2x" alt="">
+              </picture>
+            </div>
+            <div class="header-bottom__hero hero">
+              <div class="container">
+                <div class="hero__container">
                   <h1>
                     Захватывающие вершины Кавказа
                   </h1>
                   <p>
-                    В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину
+                    В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                    восход на&nbsp;вершину
                     горы
                     Чегет.
                   </p>
-                  <button class="header-bottom__button btn">
+                  <button class="hero__button btn">
                     Смотреть тур
                   </button>
-                  <div class="header-bottom__descriptions-container">
-                    <div class="header-bottom__description-container">
+                  <div class="hero__descriptions-container">
+                    <div class="hero__description-container">
                       <svg width="12" height="12" focusable="false" aria-hidden="true">
                         <use href="./img/sprite.svg#moon"></use>
                       </svg>
@@ -141,7 +110,7 @@
                         6 дней/5 ночей
                       </p>
                     </div>
-                    <div class="header-bottom__description-container">
+                    <div class="hero__description-container">
                       <svg width="12" height="12" focusable="false" aria-hidden="true">
                         <use href="./img/sprite.svg#complexity"></use>
                       </svg>
@@ -150,10 +119,140 @@
                       </p>
                     </div>
                   </div>
-                  <div class="header-bottom__video-contaner video-hero-container">
-                    <video data-action="gym-video" src="./video/header-bottom-video.mp4"
-                      poster="./img/header/header-bottom-video-preview/header-bottom-video-preview.webp" controls
-                      width="482" height="317"></video>
+                  <div class="hero__video-contaner video-hero-container">
+                    <video data-action="gym-video" src="./video/hero-video.mp4"
+                      poster="./img/header/hero-video-preview/hero-video-preview.webp" controls width="482"
+                      height="317"></video>
+                    <button class="video-hero-container__button" data-action="play-button" aria-label="Включить видео">
+                      <svg class="video-hero-container__button-icon" xmlns="http://www.w3.org/2000/svg" width="56"
+                        height="56" viewBox="0 0 56 56" fill="none">
+                        <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white" />
+                        <path d="M37 28L25 17V39L37 28Z" fill="white" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide header-bottom__swiper-slide">
+            <div class="header-bottom__background-img">
+              <picture>
+                <source media="(max-width:767px)" type="image/webp"
+                  srcset="./img/header/hero-photo-2/hero-photo-2@1x-mobile.webp 1x, ./img/header/hero-photo-2/hero-photo-2@2x-mobile.webp 2x">
+                <source media="(max-width:1199px)" type="image/webp"
+                  srcset="./img/header/hero-photo-2/hero-photo-2@1x-tablet.webp 1x, ./img/header/hero-photo-2/hero-photo-2@2x-tablet.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/header/hero-photo-2/hero-photo-2@1x-desktop.webp 1x, ./img/header/hero-photo-2/hero-photo-2@2x-desktop.webp 2x">
+                <source media="(max-width:767px)"
+                  srcset="./img/header/hero-photo-2/hero-photo-2@1x-mobile.jpg 1x, ./img/header/hero-photo-2/hero-photo-2@2x-mobile.jpg 2x">
+                <source media="(max-width:1199px)"
+                  srcset="./img/header/hero-photo-2/hero-photo-2@1x-tablet.jpg 1x, ./img/header/hero-photo-2/hero-photo-2@2x-tablet.jpg 2x">
+                <img src="./img/header/hero-photo-2/hero-photo-2@1x-desktop.jpg"
+                  srcset="./img/header/hero-photo-2/hero-photo-2@2x-desktop.jpg 2x" alt="">
+              </picture>
+            </div>
+            <div class="header-bottom__hero hero">
+              <div class="container">
+                <div class="hero__container">
+                  <h1>
+                    Невероятная природа Камчатки
+                  </h1>
+                  <p>
+                    Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие
+                    по&nbsp;одному из&nbsp;самых
+                    нетронутых уголков дикой природы в&nbsp;мире.
+                  </p>
+                  <button class="hero__button btn">
+                    Смотреть тур
+                  </button>
+                  <div class="hero__descriptions-container">
+                    <div class="hero__description-container">
+                      <svg width="12" height="12" focusable="false" aria-hidden="true">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>
+                        9 дней/10 ночей
+                      </p>
+                    </div>
+                    <div class="hero__description-container">
+                      <svg width="12" height="12" focusable="false" aria-hidden="true">
+                        <use href="./img/sprite.svg#complexity"></use>
+                      </svg>
+                      <p>
+                        Средняя сложность
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hero__video-contaner video-hero-container">
+                    <video data-action="gym-video" src="./video/hero-video.mp4"
+                      poster="./img/header/hero-video-preview/hero-video-preview.webp" controls width="482"
+                      height="317"></video>
+                    <button class="video-hero-container__button" data-action="play-button" aria-label="Включить видео">
+                      <svg class="video-hero-container__button-icon" xmlns="http://www.w3.org/2000/svg" width="56"
+                        height="56" viewBox="0 0 56 56" fill="none">
+                        <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white" />
+                        <path d="M37 28L25 17V39L37 28Z" fill="white" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide header-bottom__swiper-slide">
+            <div class="header-bottom__background-img">
+              <picture>
+                <source media="(max-width:767px)" type="image/webp"
+                  srcset="./img/header/hero-photo-3/hero-photo-3@1x-mobile.webp 1x, ./img/header/hero-photo-3/hero-photo-3@2x-mobile.webp 2x">
+                <source media="(max-width:1199px)" type="image/webp"
+                  srcset="./img/header/hero-photo-3/hero-photo-3@1x-tablet.webp 1x, ./img/header/hero-photo-3/hero-photo-3@2x-tablet.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/header/hero-photo-3/hero-photo-3@1x-desktop.webp 1x, ./img/header/hero-photo-3/hero-photo-3@2x-desktop.webp 2x">
+                <source media="(max-width:767px)"
+                  srcset="./img/header/hero-photo-3/hero-photo-3@1x-mobile.jpg 1x, ./img/header/hero-photo-3/hero-photo-3@2x-mobile.jpg 2x">
+                <source media="(max-width:1199px)"
+                  srcset="./img/header/hero-photo-3/hero-photo-3@1x-tablet.jpg 1x, ./img/header/hero-photo-3/hero-photo-3@2x-tablet.jpg 2x">
+                <img src="./img/header/hero-photo-3/hero-photo-3@1x-desktop.jpg"
+                  srcset="./img/header/hero-photo-3/hero-photo-3@2x-desktop.jpg 2x" alt="">
+              </picture>
+            </div>
+            <div class="header-bottom__hero hero">
+              <div class="container">
+                <div class="hero__container">
+                  <h1>
+                    Магические пейзажи Алтайского Края
+                  </h1>
+                  <p>
+                    Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических
+                    и&nbsp;захватывающих дух
+                    ландшафтов Алтайских гор.
+                  </p>
+                  <button class="hero__button btn">
+                    Смотреть тур
+                  </button>
+                  <div class="hero__descriptions-container">
+                    <div class="hero__description-container">
+                      <svg width="12" height="12" focusable="false" aria-hidden="true">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>
+                        6 дней/5 ночей
+                      </p>
+                    </div>
+                    <div class="hero__description-container">
+                      <svg width="12" height="12" focusable="false" aria-hidden="true">
+                        <use href="./img/sprite.svg#complexity"></use>
+                      </svg>
+                      <p>
+                        Высокая сложность
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hero__video-contaner video-hero-container">
+                    <video data-action="gym-video" src="./video/hero-video.mp4"
+                      poster="./img/header/hero-video-preview/hero-video-preview.webp" controls width="482"
+                      height="317"></video>
                     <button class="video-hero-container__button" data-action="play-button" aria-label="Включить видео">
                       <svg class="video-hero-container__button-icon" xmlns="http://www.w3.org/2000/svg" width="56"
                         height="56" viewBox="0 0 56 56" fill="none">
@@ -167,6 +266,7 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination header-bottom__swiper-pagination"></div>
       </div>
     </header>
     <main class="main">

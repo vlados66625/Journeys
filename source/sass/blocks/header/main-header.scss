@@ -1,16 +1,12 @@
-.main-header {
-  position: relative;
+.main-header__header-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
-.main-header__wrapper {
-  position: relative;
-  padding: 40px 0 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 77px;
-}
-
-.main-header__swiper-hero {
+.header-bottom__background-img {
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -19,7 +15,7 @@
   background-color: $color-royal-blue;
 }
 
-.main-header__swiper-hero img {
+.header-bottom__background-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
