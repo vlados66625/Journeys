@@ -1,5 +1,11 @@
 .hero__container {
   position: relative;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hero h1 {
@@ -15,6 +21,8 @@
   cursor: default;
 
   @include vp-1199 {
+    margin-bottom: 13px;
+    text-align: center;
     font-size: 56px;
     line-height: 56px;
   }
@@ -25,7 +33,7 @@
   }
 }
 
-.hero p {
+.hero__container > p {
   margin-top: 0;
   margin-bottom: 37px;
   max-width: 470px;
@@ -33,6 +41,11 @@
   line-height: 24px;
   color: $color-default-white;
   cursor: default;
+
+  @include vp-1199 {
+    text-align: center;
+    margin-bottom: 28px;
+  }
 
   @include vp-767 {
     font-size: 15px;
@@ -42,11 +55,25 @@
 
 .hero__button {
   margin-bottom: 150px;
+
+  @include vp-1199 {
+    display: block;
+    margin: 0 0 50px 0;
+    min-width: 206px;
+
+    &--kamchatka {
+      margin-bottom: 34px;
+    }
+  }
 }
 
 .hero__descriptions-container {
   display: flex;
   gap: 10px;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .hero__description-container {
@@ -69,4 +96,55 @@
   position: absolute;
   right: 0;
   top: 119px;
+
+  @include vp-1199 {
+    position: relative;
+    top: 0;
+  }
+}
+
+.hero__card-img-container {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  display: flex;
+
+  @include vp-1199 {
+    position: relative;
+    bottom: 0;
+    padding-top: 53px;
+    padding-left: 206px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__card-ahead {
+  position: absolute;
+  bottom: 51px;
+  left: -133px;
+
+  @include vp-1199 {
+    bottom: 14px;
+    left: 0px;
+  }
+}
+
+.hero__card-ahead img {
+  @include vp-1199 {
+    width: 266px;
+    height: 351px;
+  }
+}
+
+.hero__card-behind img {
+  position: relative;
+  z-index: 2;
+
+  @include vp-1199 {
+    width: 236px;
+    height: 312px;
+  }
 }

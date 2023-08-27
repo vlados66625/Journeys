@@ -4,13 +4,27 @@
 
 .header-bottom__swiper-slide {
   padding: 182px 0 80px;
+
+  @include vp-1199 {
+    padding: 173px 0 218px;
+
+    &--kamchatka {
+      padding: 173px 0 169px;
+    }
+  }
 }
 
 .header-bottom .header-bottom__swiper-pagination {
   position: absolute;
-  left: 1253px;
+  left: 87%;
   bottom: 94px;
   width: max-content;
+
+  @include vp-1199 {
+    left: 50%;
+    bottom: 86px;
+    transform: translateX(-50%);
+  }
 }
 
 .header-bottom__swiper-pagination .swiper-pagination-bullet {
@@ -20,9 +34,13 @@
   background-color: transparent;
   outline-offset: -1px;
   opacity: 1;
+
+  @include vp-767 {
+    width: 7px;
+    height: 7px;
+  }
 }
 
 .header-bottom__swiper-pagination .swiper-pagination-bullet-active {
   background-color: $color-default-white;
-  border: 1px solid $color-default-white;
 }

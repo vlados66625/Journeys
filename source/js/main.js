@@ -1,5 +1,6 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { addEvtVideo } from './modules/play-button';
+import { addEvtToggleButton } from './modules/toggle-button';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  addEvtToggleButton();
   addEvtVideo();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

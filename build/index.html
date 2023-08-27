@@ -34,12 +34,20 @@
       <div class="main-header__header-top header-top">
         <div class="container container--header-top">
           <div class="header-top__container">
+            <button class="header-top__toggle header-top__toggle--closed">
+              <svg class="header-top__opened-icon" width="26" height="26" aria-label="открыть меню">
+                <use href="./img/sprite.svg#toggle-closed"></use>
+              </svg>
+              <svg class="header-top__closed-icon" width="22" height="22" aria-label="закрыть меню">
+                <use href="./img/sprite.svg#toggle-opened"></use>
+              </svg>
+            </button>
             <a class="header-top__logo" href="./index.html">
               <svg width="205" height="62" focusable="false" aria-hidden="true">
                 <use href="./img/sprite.svg#logo"></use>
               </svg>
             </a>
-            <nav class="header-top__navigation">
+            <nav class="header-top__navigation header-top__navigation--closed">
               <ul>
                 <li>
                   <a href="#">Туры</a>
@@ -135,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide header-bottom__swiper-slide">
+          <div class="swiper-slide header-bottom__swiper-slide header-bottom__swiper-slide--kamchatka">
             <div class="header-bottom__background-img">
               <picture>
                 <source media="(max-width:767px)" type="image/webp"
@@ -163,7 +171,7 @@
                     по&nbsp;одному из&nbsp;самых
                     нетронутых уголков дикой природы в&nbsp;мире.
                   </p>
-                  <button class="hero__button btn">
+                  <button class="hero__button hero__button--kamchatka btn">
                     Смотреть тур
                   </button>
                   <div class="hero__descriptions-container">
@@ -184,17 +192,25 @@
                       </p>
                     </div>
                   </div>
-                  <div class="hero__video-contaner video-hero-container">
-                    <video data-action="gym-video" src="./video/hero-video.mp4"
-                      poster="./img/header/hero-video-preview/hero-video-preview.webp" controls width="482"
-                      height="317"></video>
-                    <button class="video-hero-container__button" data-action="play-button" aria-label="Включить видео">
-                      <svg class="video-hero-container__button-icon" xmlns="http://www.w3.org/2000/svg" width="56"
-                        height="56" viewBox="0 0 56 56" fill="none">
-                        <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white" />
-                        <path d="M37 28L25 17V39L37 28Z" fill="white" />
-                      </svg>
-                    </button>
+                  <div class="hero__card-img-container">
+                    <div class="hero__card-ahead">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="./img/header/hero-card-1/hero-card-1@1x.webp 1x, ./img/header/hero-card-1/hero-card-1@2x.webp 2x">
+                        <img src="./img/header/hero-card-1/hero-card-1@1x.png"
+                          srcset="./img/header/hero-card-1/hero-card-1@2x.png 2x" width="308" height="407"
+                          alt="Голубое озеро среди гор.">
+                      </picture>
+                    </div>
+                    <div class="hero__card-behind">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="./img/header/hero-card-2/hero-card-2@1x.webp 1x, ./img/header/hero-card-2/hero-card-2@2x.webp 2x">
+                        <img src="./img/header/hero-card-2/hero-card-2@1x.png"
+                          srcset="./img/header/hero-card-2/hero-card-2@2x.png 2x" width="277" height="366"
+                          alt="Путешественница в горах.">
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -245,21 +261,11 @@
                         <use href="./img/sprite.svg#complexity"></use>
                       </svg>
                       <p>
-                        Высокая сложность
+                        Легкая сложность
                       </p>
                     </div>
                   </div>
                   <div class="hero__video-contaner video-hero-container">
-                    <video data-action="gym-video" src="./video/hero-video.mp4"
-                      poster="./img/header/hero-video-preview/hero-video-preview.webp" controls width="482"
-                      height="317"></video>
-                    <button class="video-hero-container__button" data-action="play-button" aria-label="Включить видео">
-                      <svg class="video-hero-container__button-icon" xmlns="http://www.w3.org/2000/svg" width="56"
-                        height="56" viewBox="0 0 56 56" fill="none">
-                        <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white" />
-                        <path d="M37 28L25 17V39L37 28Z" fill="white" />
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
