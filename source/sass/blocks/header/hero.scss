@@ -28,6 +28,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 14px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -48,6 +49,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 20px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -63,6 +65,15 @@
 
     &--kamchatka {
       margin-bottom: 34px;
+    }
+
+    &--altay {
+      margin-bottom: 69px;
+    }
+
+    @include vp-767 {
+      min-width: 180px;
+      padding: 18px;
     }
   }
 }
@@ -100,6 +111,21 @@
   @include vp-1199 {
     position: relative;
     top: 0;
+  }
+}
+
+.hero__audio-contaner {
+  position: absolute;
+  right: 0;
+  top: 119px;
+
+  @include vp-1199 {
+    position: relative;
+    top: 0;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 

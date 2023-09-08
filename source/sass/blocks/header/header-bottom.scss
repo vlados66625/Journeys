@@ -6,10 +6,13 @@
   padding: 182px 0 80px;
 
   @include vp-1199 {
-    padding: 173px 0 218px;
+    box-sizing: border-box;
+    min-height: 1024px;
+    padding: 173px 0 110px;
 
-    &--kamchatka {
-      padding: 173px 0 169px;
+    @include vp-767 {
+      min-height: 568px;
+      padding: 140px 0 60px;
     }
   }
 }
@@ -24,6 +27,10 @@
     left: 50%;
     bottom: 86px;
     transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    bottom: 37px;
   }
 }
 

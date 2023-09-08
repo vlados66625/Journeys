@@ -19,13 +19,13 @@
 }
 
 @mixin disabled {
-  &:not(.class):not(.claas1):not(.class2) {
+  &:not(.cl):not(.cl):not(.cl) {
     @content;
   }
 }
 
 @mixin active {
-  &:active:not(.cl):not(.cl2):not(.cl3) {
+  &:active:not(.cl):not(.cl):not(.cl) {
     @content;
   }
 }

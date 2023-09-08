@@ -32,45 +32,49 @@
   <div class="wrapper">
     <header class="main-header">
       <div class="main-header__header-top header-top">
-        <div class="container container--header-top">
-          <div class="header-top__container">
-            <button class="header-top__toggle header-top__toggle--closed">
-              <svg class="header-top__opened-icon" width="26" height="26" aria-label="открыть меню">
-                <use href="./img/sprite.svg#toggle-closed"></use>
-              </svg>
-              <svg class="header-top__closed-icon" width="22" height="22" aria-label="закрыть меню">
-                <use href="./img/sprite.svg#toggle-opened"></use>
-              </svg>
-            </button>
-            <a class="header-top__logo" href="./index.html">
-              <svg width="205" height="62" focusable="false" aria-hidden="true">
-                <use href="./img/sprite.svg#logo"></use>
-              </svg>
-            </a>
-            <nav class="header-top__navigation header-top__navigation--closed">
-              <ul>
-                <li>
-                  <a href="#">Туры</a>
-                </li>
-                <li>
-                  <a href="#">Обучение</a>
-                </li>
-                <li>
-                  <a href="#">О нас</a>
-                </li>
-                <li>
-                  <a href="#">Отзывы</a>
-                </li>
-                <li>
-                  <a href="#">Фотографии</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header-top__telephone">
-              <a href="tel:+7807253232">8 800 725 32 32</a>
+        <div class="header-top__wrapper">
+          <div class="container">
+            <div class="header-top__container">
+              <button class="header-top__toggle header-top__toggle--closed">
+                <svg class="header-top__opened-icon" width="26" height="26" aria-label="открыть меню">
+                  <use fill="white" href="./img/sprite.svg#toggle-closed"></use>
+                </svg>
+                <svg class="header-top__closed-icon" width="22" height="22" aria-label="закрыть меню">
+                  <use stroke="#2D383F" href="./img/sprite.svg#toggle-opened"></use>
+                </svg>
+              </button>
+              <a class="header-top__logo" href="./index.html">
+                <svg class="header-top__logo-icon" width="205" height="62" focusable="false" aria-hidden="true">
+                  <use fill="white" href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+              <nav class="header-top__navigation header-top__navigation--closed">
+                <div class="container container--navigation">
+                  <ul>
+                    <li>
+                      <a href="#">Туры</a>
+                    </li>
+                    <li>
+                      <a href="#">Обучение</a>
+                    </li>
+                    <li>
+                      <a href="#">О нас</a>
+                    </li>
+                    <li>
+                      <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                      <a href="#">Фотографии</a>
+                    </li>
+                    <li>
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="header-top__telephone">
+                <a href="tel:+7807253232">8 800 725 32 32</a>
+              </div>
             </div>
           </div>
         </div>
@@ -143,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide header-bottom__swiper-slide header-bottom__swiper-slide--kamchatka">
+          <div class="swiper-slide header-bottom__swiper-slide">
             <div class="header-bottom__background-img">
               <picture>
                 <source media="(max-width:767px)" type="image/webp"
@@ -171,9 +175,9 @@
                     по&nbsp;одному из&nbsp;самых
                     нетронутых уголков дикой природы в&nbsp;мире.
                   </p>
-                  <button class="hero__button hero__button--kamchatka btn">
+                  <a href="#" class="hero__button hero__button--kamchatka btn">
                     Смотреть тур
-                  </button>
+                  </a>
                   <div class="hero__descriptions-container">
                     <div class="hero__description-container">
                       <svg width="12" height="12" focusable="false" aria-hidden="true">
@@ -244,7 +248,7 @@
                     и&nbsp;захватывающих дух
                     ландшафтов Алтайских гор.
                   </p>
-                  <button class="hero__button btn">
+                  <button class="hero__button hero__button--altay btn">
                     Смотреть тур
                   </button>
                   <div class="hero__descriptions-container">
@@ -265,7 +269,9 @@
                       </p>
                     </div>
                   </div>
-                  <div class="hero__video-contaner video-hero-container">
+                  <div class="hero__audio-contaner audio-hero-container">
+                    <iframe style="border:none;width:340px;height:220px;" width="340" height="220"
+                      src="https://music.yandex.ru/iframe/#track/116266134/25474374"></iframe>
                   </div>
                 </div>
               </div>
@@ -276,7 +282,738 @@
       </div>
     </header>
     <main class="main">
-
+      <section class="upcoming-tours">
+        <div class="container">
+          <div class="upcoming-tours__container">
+            <div class="upcoming-tours__title-button-container">
+              <h2 class="upcoming-tours__title title-second title-second--upcoming-tours">
+                Ближайшие туры
+              </h2>
+              <div class="upcoming-tours__button-container button-swiper">
+                <button class="swiper-button-prev upcoming-tours__button-prev button-swiper__button">
+                  <svg class="button-swiper__button__icon" width="14" height="8" focusable="false" aria-hidden="true">
+                    <use fill="white" href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button
+                  class="swiper-button-next button-swiper__button upcoming-tours__button-next button-swiper__button--next">
+                  <svg class="button-swiper__button__icon" width="14" height="8" focusable="false" aria-hidden="true">
+                    <use fill="white" href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper upcoming-tours__swiper">
+              <div class="swiper-wrapper upcoming-tours__swiper-wrapper">
+                <div class="swiper-slide upcoming-tours__swiper-slide">
+                  <div class="upcoming-tours__card tourist-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.webp 2x">
+                      <img
+                        src="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.jpg"
+                        width="380" height="412" alt=""
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.jpg 2x">
+                    </picture>
+                    <div class="tourist-card__yer-period-container">
+                      <div class="tourist-card__yer-container">
+                        <svg class="tourist-card__yer-icon" width="9" height="12" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#yer"></use>
+                        </svg>
+                        <p>
+                          Кавказ
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--elbrus">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#day"></use>
+                        </svg>
+                        <p>
+                          4 дня
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--elbrus">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#night"></use>
+                        </svg>
+                        <p>
+                          3 ночи
+                        </p>
+                      </div>
+                    </div>
+                    <h3>
+                      Путешествие вокруг Эльбруса
+                    </h3>
+                    <div class="tourist-card__wrapper">
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Сложность:
+                        </dt>
+                        <dd>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Даты набора:
+                        </dt>
+                        <dd>
+                          12.06-19.06
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Группа:
+                        </dt>
+                        <dd>
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide upcoming-tours__swiper-slide">
+                  <div class="upcoming-tours__card tourist-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-beluga/beluga-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-beluga/beluga-background@2x.webp 2x">
+                      <img
+                        src="./img/main/upcoming-tours-background/upcoming-tours-background-beluga/beluga-background.jpg"
+                        width="380" height="412" alt=""
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-beluga/beluga-background@2x.jpg 2x">
+                    </picture>
+                    <div class="tourist-card__yer-period-container">
+                      <div class="tourist-card__yer-container">
+                        <svg class="tourist-card__yer-icon" width="9" height="12" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#yer"></use>
+                        </svg>
+                        <p>
+                          Алтай
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#day"></use>
+                        </svg>
+                        <p>
+                          14 дней
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#night"></use>
+                        </svg>
+                        <p>
+                          13 ночей
+                        </p>
+                      </div>
+                    </div>
+                    <h3>
+                      Путь к&nbsp;подножию Белухи
+                    </h3>
+                    <div class="tourist-card__wrapper">
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Сложность:
+                        </dt>
+                        <dd>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Даты набора:
+                        </dt>
+                        <dd>
+                          14.06-23.06
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Группа:
+                        </dt>
+                        <dd>
+                          до 25 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide upcoming-tours__swiper-slide">
+                  <div class="upcoming-tours__card tourist-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background@2x.webp 2x">
+                      <img
+                        src="./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background.jpg"
+                        width="380" height="412" alt=""
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background@2x.jpg 2x">
+                    </picture>
+                    <div class="tourist-card__yer-period-container">
+                      <div class="tourist-card__yer-container tourist-card__yer-container--fisht">
+                        <svg class="tourist-card__yer-icon" width="9" height="12" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#yer"></use>
+                        </svg>
+                        <p>
+                          Адыгея
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--fisht">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#day"></use>
+                        </svg>
+                        <p>
+                          7 дней
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--fisht">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#night"></use>
+                        </svg>
+                        <p>
+                          6 ночей
+                        </p>
+                      </div>
+                    </div>
+                    <h3>
+                      Через Фишт к&nbsp;Черному морю
+                    </h3>
+                    <div class="tourist-card__wrapper">
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Сложность:
+                        </dt>
+                        <dd>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Даты набора:
+                        </dt>
+                        <dd>
+                          15.07-19.07
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Группа:
+                        </dt>
+                        <dd>
+                          до 22 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide upcoming-tours__swiper-slide">
+                  <div class="upcoming-tours__card tourist-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.webp 2x">
+                      <img
+                        src="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.jpg"
+                        width="380" height="412" alt=""
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.jpg 2x">
+                    </picture>
+                    <div class="tourist-card__yer-period-container">
+                      <div class="tourist-card__yer-container">
+                        <svg class="tourist-card__yer-icon" width="9" height="12" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#yer"></use>
+                        </svg>
+                        <p>
+                          Кавказ
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--elbrus">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#day"></use>
+                        </svg>
+                        <p>
+                          4 дня
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--elbrus">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#night"></use>
+                        </svg>
+                        <p>
+                          3 ночи
+                        </p>
+                      </div>
+                    </div>
+                    <h3>
+                      Путешествие вокруг Эльбруса
+                    </h3>
+                    <div class="tourist-card__wrapper">
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Сложность:
+                        </dt>
+                        <dd>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Даты набора:
+                        </dt>
+                        <dd>
+                          12.06-19.06
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Группа:
+                        </dt>
+                        <dd>
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide upcoming-tours__swiper-slide">
+                  <div class="upcoming-tours__card tourist-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.webp 2x">
+                      <img
+                        src="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.jpg"
+                        width="380" height="412" alt=""
+                        srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.jpg 2x">
+                    </picture>
+                    <div class="tourist-card__yer-period-container">
+                      <div class="tourist-card__yer-container">
+                        <svg class="tourist-card__yer-icon" width="9" height="12" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#yer"></use>
+                        </svg>
+                        <p>
+                          Кавказ
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--elbrus">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#day"></use>
+                        </svg>
+                        <p>
+                          4 дня
+                        </p>
+                      </div>
+                      <div class="tourist-card__period-container tourist-card__period-container--elbrus">
+                        <svg class="tourist-card__period-icon" width="20" height="20" focusable="false"
+                          aria-hidden="true">
+                          <use href="./img/sprite.svg#night"></use>
+                        </svg>
+                        <p>
+                          3 ночи
+                        </p>
+                      </div>
+                    </div>
+                    <h3>
+                      Путешествие вокруг Эльбруса
+                    </h3>
+                    <div class="tourist-card__wrapper">
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Сложность:
+                        </dt>
+                        <dd>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star tourist-card__star--shaded" width="15" height="14"
+                            focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="tourist-card__star" width="15" height="14" focusable="false" aria-hidden="true">
+                            <use href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Даты набора:
+                        </dt>
+                        <dd>
+                          12.06-19.06
+                        </dd>
+                      </dl>
+                      <dl class="tourist-card__data-container">
+                        <dt>
+                          Группа:
+                        </dt>
+                        <dd>
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="upcoming-tours__all-tours-link">
+              Показать все туры
+              <svg class="upcoming-tours__all-tours-icon" width="9" height="14" focusable="false" aria-hidden="true">
+                <use href="./img/sprite.svg#link-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="training">
+        <div class="container">
+          <div class="training__container">
+            <h2 class="training__title title-second title-second--training">
+              Обучение
+            </h2>
+            <p class="training__description">
+              Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов
+              Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
+            </p>
+            <div class="training__wrapper">
+              <h3 class="training__subtitle">
+                Наши инструкторы
+              </h3>
+              <div class="training__button-container button-swiper">
+                <button class="swiper-button-prev training__button-prev button-swiper__button">
+                  <svg class="button-swiper__button__icon" width="14" height="8" focusable="false" aria-hidden="true">
+                    <use fill="white" href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button
+                  class="swiper-button-next button-swiper__button training__button-next button-swiper__button--next">
+                  <svg class="button-swiper__button__icon" width="14" height="8" focusable="false" aria-hidden="true">
+                    <use fill="white" href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper training__swiper">
+              <div class="swiper-wrapper training__swiper-wrapper">
+                <div class="swiper-slide training__swiper-slide">
+                  <div class="training__instructor-card instructor-card">
+                    <picture>
+                      <source media="(max-width:767px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-mobile.webp 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-mobile.webp 2x">
+                      <source media="(max-width:1199px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-tablet.webp 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-tablet.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x.webp 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x.webp 2x">
+                      <source media="(max-width:767px)"
+                        srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-mobile.jpg 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-mobile.jpg 2x">
+                      <source media="(max-width:1199px)"
+                        srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-tablet.jpg 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-tablet.jpg 2x">
+                      <img src="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x.jpg"
+                        alt="Александр Прокофьев" width="238" height="212"
+                        srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x.jpg 2x">
+                    </picture>
+                    <div class="instructor-card__wrapper">
+                      <h4>
+                        Александр<br> Прокофьев
+                      </h4>
+                      <div class="instructor-card__social-container">
+                        <a href="#">
+                          <svg width="14" height="8" focusable="false" aria-hidden="true">
+                            <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide training__swiper-slide">
+                  <div class="training__instructor-card instructor-card">
+                    <picture>
+                      <source media="(max-width:767px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x-mobile.webp 1x, ./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x-mobile.webp 2x">
+                      <source media="(max-width:1199px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x-tablet.webp 1x, ./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x-tablet.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x.webp 1x, ./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x.webp 2x">
+                      <source media="(max-width:767px)"
+                        srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x-mobile.jpg 1x, ./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x-mobile.jpg 2x">
+                      <source media="(max-width:1199px)"
+                        srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x-tablet.jpg 1x, ./img/main/instructors/instructor-afinogenova/instructor-prokofiev@2x-tablet.jpg 2x">
+                      <img src="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x.jpg"
+                        alt="Александр Прокофьев" width="238" height="212"
+                        srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x.jpg 2x">
+                    </picture>
+                    <div class="instructor-card__wrapper">
+                      <h4>
+                        Светлана <br>Афиногенова
+                      </h4>
+                      <div class="instructor-card__social-container">
+                        <a href="#">
+                          <svg width="14" height="8" focusable="false" aria-hidden="true">
+                            <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе,
+                      чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide training__swiper-slide">
+                  <div class="training__instructor-card instructor-card">
+                    <picture>
+                      <source media="(max-width:767px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x-mobile.webp 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x-mobile.webp 2x">
+                      <source media="(max-width:1199px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x-tablet.webp 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x-tablet.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x.webp 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x.webp 2x">
+                      <source media="(max-width:767px)"
+                        srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x-mobile.jpg 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x-mobile.jpg 2x">
+                      <source media="(max-width:1199px)"
+                        srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x-tablet.jpg 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-prokofiev@2x-tablet.jpg 2x">
+                      <img src="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x.jpg"
+                        alt="Александр Прокофьев" width="238" height="212"
+                        srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x.jpg 2x">
+                    </picture>
+                    <div class="instructor-card__wrapper">
+                      <h4>
+                        Надежда<br> Колесниченко
+                      </h4>
+                      <div class="instructor-card__social-container">
+                        <a href="#">
+                          <svg width="14" height="8" focusable="false" aria-hidden="true">
+                            <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках
+                      с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide training__swiper-slide">
+                  <div class="training__instructor-card instructor-card">
+                    <picture>
+                      <source media="(max-width:767px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x-mobile.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x-mobile.webp 2x">
+                      <source media="(max-width:1199px)" type="image/webp"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x-tablet.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x-tablet.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.webp 2x">
+                      <source media="(max-width:767px)"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x-mobile.jpg 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x-mobile.jpg 2x">
+                      <source media="(max-width:1199px)"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x-tablet.jpg 1x, ./img/main/instructors/instructor-kaygorodov/instructor-prokofiev@2x-tablet.jpg 2x">
+                      <img src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
+                        alt="Александр Прокофьев" width="238" height="212"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.jpg 2x">
+                    </picture>
+                    <div class="instructor-card__wrapper">
+                      <h4>
+                        Федор<br> Кайгородов
+                      </h4>
+                      <div class="instructor-card__social-container">
+                        <a href="#">
+                          <svg width="14" height="8" focusable="false" aria-hidden="true">
+                            <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных
+                      районах Хибины, Архыз, много путешествует по&nbsp;Европе.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide training__swiper-slide">
+                  <div class="training__instructor-card instructor-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.webp 2x">
+                      <img src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
+                        alt="Александр Прокофьев" width="238" height="212"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.jpg 2x">
+                    </picture>
+                    <div class="instructor-card__wrapper">
+                      <h4>
+                        Федор<br> Кайгородов
+                      </h4>
+                      <div class="instructor-card__social-container">
+                        <a href="#">
+                          <svg width="14" height="8" focusable="false" aria-hidden="true">
+                            <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных
+                      районах Хибины, Архыз, много путешествует по&nbsp;Европе.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide training__swiper-slide">
+                  <div class="training__instructor-card instructor-card">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.webp 2x">
+                      <img src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
+                        alt="Александр Прокофьев" width="238" height="212"
+                        srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.jpg 2x">
+                    </picture>
+                    <div class="instructor-card__wrapper">
+                      <h4>
+                        Федор<br> Кайгородов
+                      </h4>
+                      <div class="instructor-card__social-container">
+                        <a href="#">
+                          <svg width="14" height="8" focusable="false" aria-hidden="true">
+                            <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных
+                      районах Хибины, Архыз, много путешествует по&nbsp;Европе.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="training__subtitle">
+              Процесс обучения
+            </h3>
+            <div class="training__learning-process">
+              <ol>
+                <li>
+                  <svg width="25" height="25" focusable="false" aria-hidden="true">
+                    <use href="./img/sprite.svg#map"></use>
+                  </svg>
+                  <p>
+                    Изучение спортивного туристского движения
+                  </p>
+                </li>
+                <li>
+                  <svg width="24" height="24" focusable="false" aria-hidden="true">
+                    <use href="./img/sprite.svg#boots"></use>
+                  </svg>
+                  <p>
+                    Подготовка и техническое снаряжение в походах
+                  </p>
+                </li>
+                <li>
+                  <div>
+                    <svg width="23" height="23" focusable="false" aria-hidden="true">
+                      <use href="./img/sprite.svg#pine-tree"></use>
+                    </svg>
+                  </div>
+                  <p>
+                    Лекции по окружающей среде, экологии и гигиене
+                  </p>
+                </li>
+                <li>
+                  <svg width="25" height="25" focusable="false" aria-hidden="true">
+                    <use href="./img/sprite.svg#mountain"></use>
+                  </svg>
+                  <p>
+                    Разъяснение сложности горных препятствий
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="main-footer">
       <!-- <div class="container">

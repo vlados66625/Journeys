@@ -19,6 +19,7 @@
 @import "global/container";
 @import "global/title-second";
 @import "global/btn";
+@import "global/button-swiper";
 
 // Blocks
 // ---------------------------------
@@ -28,6 +29,12 @@
 @import "blocks/header/video-hero-container";
 @import "blocks/header/header-bottom";
 @import "blocks/header/hero";
+
+// Main
+@import "blocks/main/upcoming-tours";
+@import "blocks/main/tourist-card";
+@import "blocks/main/training";
+@import "blocks/main/instructor-card";
 
 // Global
 // ---------------------------------
