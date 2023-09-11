@@ -24,4 +24,24 @@
       padding: 0 4.69%;
     }
   }
+
+  &--advantages {
+    max-width: none;
+    padding: 0;
+
+    @include vp-1199 {
+      padding: 0 5.86%;
+    }
+
+    @include vp-767 {
+      padding: 0 4.69%;
+      box-sizing: border-box;
+    }
+  }
+
+  &--reviews {
+    padding-left: 5.86%;
+    padding-right: 0;
+    max-width: none;
+  }
 }

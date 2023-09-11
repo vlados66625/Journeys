@@ -19,7 +19,7 @@
     outline: 1px solid $color-resolution-blue;
     outline-offset: -1px;
 
-    & .button-swiper__button__icon use {
+    & .button-swiper__button-icon use {
       fill: $color-resolution-blue;
     }
   }
@@ -28,7 +28,7 @@
     outline: none;
     background-color: $color-resolution-blue;
 
-    & .button-swiper__button__icon use {
+    & .button-swiper__button-icon use {
       fill: $color-default-white;
     }
   }
@@ -39,7 +39,7 @@
   }
 }
 
-.button-swiper__button__icon {
+.button-swiper__button-icon {
   position: absolute;
   top: 50%;
   left: 50%;

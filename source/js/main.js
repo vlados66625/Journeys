@@ -1,6 +1,7 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { addEvtVideo } from './modules/play-button';
 import { addEvtToggleButton } from './modules/toggle-button';
+import { duplicatesAdvantages } from './modules/duplicatesAdvantages';
 
 // ---------------------------------
 
@@ -15,6 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   addEvtToggleButton();
   addEvtVideo();
+  duplicatesAdvantages();
+
+  window.addEventListener('resize', duplicatesAdvantages);
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

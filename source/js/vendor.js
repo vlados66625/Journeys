@@ -32,6 +32,30 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  const reviewsSwiper = new Swiper('.reviews__swiper', {
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.reviews__button-next',
+      prevEl: '.reviews__button-prev',
+    },
+  });
+
+  if (window.innerWidth >= 1200) {
+    const advantagesSwiper = new Swiper('.advantages__swiper', {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 2,
+      navigation: {
+        nextEl: '.advantages__button-next',
+        prevEl: '.advantages__button-prev',
+      },
+    });
+  }
+
   const updateSwiperOptions = () => {
     if (window.innerWidth >= 1200) {
       upcomingTours.params.spaceBetween = 30;
@@ -42,12 +66,20 @@ window.addEventListener('DOMContentLoaded', () => {
       upcomingTours.params.slidesPerView = 2;
       upcomingTours.params.spaceBetween = 18;
 
-
       trainingSwiper.params.slidesPerView = 3;
+
+    } else if (window.innerWidth >= 540 && window.innerWidth < 768) {
+      reviewsSwiper.params.slidesPerView = 'auto';
+
+      upcomingTours.params.slidesPerView = 1;
+
+      trainingSwiper.params.slidesPerView = 1;
     } else {
       upcomingTours.params.slidesPerView = 1;
 
       trainingSwiper.params.slidesPerView = 1;
+
+      reviewsSwiper.params.slidesPerView = 1;
     }
     upcomingTours.update();
     upcomingTours.updateSlides();

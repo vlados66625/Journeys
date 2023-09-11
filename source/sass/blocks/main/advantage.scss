@@ -1,0 +1,66 @@
+.advantage {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  padding: 40px 20px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  @include vp-767 {
+    padding: 20px 10px;
+  }
+}
+
+.advantage__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 29px;
+  border: 1px solid $color-royal-blue;
+}
+
+.advantage h3 {
+  margin: 0 0 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  user-select: none;
+  cursor: default;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+    user-select: auto;
+    cursor: text;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.advantage p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  user-select: none;
+  cursor: default;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+    user-select: auto;
+    cursor: text;
+  }
+}
