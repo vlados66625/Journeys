@@ -56,17 +56,31 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const photoGallerySwiper = new Swiper('.photo-gallery__swiper', {
+    loop: false,
+    slidesPerView: '5',
+    spaceBetween: 5,
+    navigation: {
+      nextEl: '.photo-gallery__button-next',
+      prevEl: '.photo-gallery__button-prev',
+    },
+  });
+
   const updateSwiperOptions = () => {
     if (window.innerWidth >= 1200) {
       upcomingTours.params.spaceBetween = 30;
       upcomingTours.params.slidesPerView = 3;
 
       trainingSwiper.params.slidesPerView = 4;
+
+      photoGallerySwiper.params.slidesPerView = 5;
     } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
       upcomingTours.params.slidesPerView = 2;
       upcomingTours.params.spaceBetween = 18;
 
       trainingSwiper.params.slidesPerView = 3;
+
+      photoGallerySwiper.params.slidesPerView = 3;
 
     } else if (window.innerWidth >= 540 && window.innerWidth < 768) {
       reviewsSwiper.params.slidesPerView = 'auto';
@@ -74,12 +88,17 @@ window.addEventListener('DOMContentLoaded', () => {
       upcomingTours.params.slidesPerView = 1;
 
       trainingSwiper.params.slidesPerView = 1;
+
+      photoGallerySwiper.params.slidesPerView = 2;
     } else {
       upcomingTours.params.slidesPerView = 1;
 
       trainingSwiper.params.slidesPerView = 1;
 
       reviewsSwiper.params.slidesPerView = 1;
+
+      photoGallerySwiper.params.slidesPerView = 2;
+      photoGallerySwiper.params.spaceBetween = 3;
     }
     upcomingTours.update();
     upcomingTours.updateSlides();

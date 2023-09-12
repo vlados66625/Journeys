@@ -1,0 +1,48 @@
+.photo-gallery__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.photo-gallery__button-container {
+  @include vp-767 {
+    align-self: flex-end;
+  }
+}
+
+.photo-gallery__description p {
+  line-height: 24px;
+  max-width: 700px;
+
+  @include vp-1199 {
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.photo-gallery__photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @include vp-767 {
+    gap: 3px;
+  }
+}
+
+.photo-gallery__photo-container {
+  object-fit: cover;
+}
+
+

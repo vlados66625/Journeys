@@ -52,6 +52,12 @@ h2 {
     }
   }
 
+  &--photo-gallery {
+    &::before {
+      content: "Фотогалерея";
+    }
+  }
+
   @include vp-1199 {
     font-size: 25px;
     line-height: 25px;

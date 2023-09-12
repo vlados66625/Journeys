@@ -1168,6 +1168,10 @@ h2--advantages::before {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.title-second--photo-gallery::before,
+h2--photo-gallery::before {
+  content: "Фотогалерея";
+}
 @media (max-width: 1199px) {
   .title-second,
 h2 {
@@ -3279,6 +3283,73 @@ h2::before {
             user-select: auto;
     cursor: text;
   }
+}
+
+.photo-gallery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .photo-gallery__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .photo-gallery__button-container {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.photo-gallery__description p {
+  line-height: 24px;
+  max-width: 700px;
+}
+@media (max-width: 1199px) {
+  .photo-gallery__description p {
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .photo-gallery__description p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.photo-gallery__photo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+@media (max-width: 767px) {
+  .photo-gallery__photo-wrapper {
+    gap: 3px;
+  }
+}
+
+.photo-gallery__photo-container {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
