@@ -88,8 +88,10 @@
 }
 
 .training__subtitle {
-  @include vp-767 {
-    padding-left: 4px;
+  &--padding-left {
+    @include vp-767 {
+      padding-left: 4px;
+    }
   }
 }
 

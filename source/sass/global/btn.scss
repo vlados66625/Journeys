@@ -1,4 +1,4 @@
-.btn {
+@mixin btn {
   display: inline-flex;
   padding: 21px;
   min-width: 220px;
@@ -27,6 +27,10 @@
     color: $color-default-white;
     background: #1c3374;
   }
+}
+
+.btn {
+  @include btn;
 
   &--disabled {
     @include disabled {

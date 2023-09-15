@@ -58,6 +58,16 @@ h2 {
     }
   }
 
+  &--contacts {
+    &::before {
+      content: "Контакты";
+    }
+  }
+
+  &--white {
+    color: $color-default-white;
+  }
+
   @include vp-1199 {
     font-size: 25px;
     line-height: 25px;

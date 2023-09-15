@@ -1,8 +1,12 @@
 // Swiper 10.2.0
 import './vendor/focus-visible-polyfill';
 import Swiper from './vendor/swiper';
+import { addSlowTransitionLinks } from './vendor/addSlowTransitionLinks';
+import { Form } from './vendor/form-validate/form';
 
 window.addEventListener('DOMContentLoaded', () => {
+  addSlowTransitionLinks();
+
   const heroSwiper = new Swiper('.header-bottom', {
     loop: true,
     speed: 300,
@@ -56,9 +60,10 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
   const photoGallerySwiper = new Swiper('.photo-gallery__swiper', {
     loop: false,
-    slidesPerView: '5',
+    slidesPerView: 'auto',
     spaceBetween: 5,
     navigation: {
       nextEl: '.photo-gallery__button-next',
@@ -73,14 +78,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
       trainingSwiper.params.slidesPerView = 4;
 
-      photoGallerySwiper.params.slidesPerView = 5;
     } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
       upcomingTours.params.slidesPerView = 2;
       upcomingTours.params.spaceBetween = 18;
 
       trainingSwiper.params.slidesPerView = 3;
-
-      photoGallerySwiper.params.slidesPerView = 3;
 
     } else if (window.innerWidth >= 540 && window.innerWidth < 768) {
       reviewsSwiper.params.slidesPerView = 'auto';
@@ -89,7 +91,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
       trainingSwiper.params.slidesPerView = 1;
 
-      photoGallerySwiper.params.slidesPerView = 2;
     } else {
       upcomingTours.params.slidesPerView = 1;
 
@@ -97,19 +98,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
       reviewsSwiper.params.slidesPerView = 1;
 
-      photoGallerySwiper.params.slidesPerView = 2;
       photoGallerySwiper.params.spaceBetween = 3;
     }
-    upcomingTours.update();
-    upcomingTours.updateSlides();
-
-
-    trainingSwiper.update();
-    trainingSwiper.updateSlides();
   };
 
 
   updateSwiperOptions();
   window.addEventListener('resize', updateSwiperOptions);
+
+  const form = new Form();
+  window.form = form;
+  form.init();
 
 });

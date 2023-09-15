@@ -52,22 +52,22 @@
                 <div class="container container--navigation">
                   <ul>
                     <li>
-                      <a href="#">Туры</a>
+                      <a href="#upcoming-tours">Туры</a>
                     </li>
                     <li>
-                      <a href="#">Обучение</a>
+                      <a href="#training">Обучение</a>
                     </li>
                     <li>
-                      <a href="#">О нас</a>
+                      <a href="#about-us">О нас</a>
                     </li>
                     <li>
-                      <a href="#">Отзывы</a>
+                      <a href="#reviews">Отзывы</a>
                     </li>
                     <li>
-                      <a href="#">Фотографии</a>
+                      <a href="#photo-gallery">Фотографии</a>
                     </li>
                     <li>
-                      <a href="#">Контакты</a>
+                      <a href="#contacts">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -138,8 +138,10 @@
                     <button class="video-hero-container__button" data-action="play-button" aria-label="Включить видео">
                       <svg class="video-hero-container__button-icon" xmlns="http://www.w3.org/2000/svg" width="56"
                         height="56" viewBox="0 0 56 56" fill="none">
-                        <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white" />
-                        <path d="M37 28L25 17V39L37 28Z" fill="white" />
+                        <circle class="video-hero-container__button-icon-circle" cx="28" cy="28" r="27.5" fill="white"
+                          fill-opacity="0.2" stroke="white" />
+                        <path class="video-hero-container__button-icon-triangle" d="M37 28L25 17V39L37 28Z"
+                          fill="white" />
                       </svg>
                     </button>
                   </div>
@@ -160,7 +162,7 @@
                   srcset="./img/header/hero-photo-2/hero-photo-2@1x-mobile.jpg 1x, ./img/header/hero-photo-2/hero-photo-2@2x-mobile.jpg 2x">
                 <source media="(max-width:1199px)"
                   srcset="./img/header/hero-photo-2/hero-photo-2@1x-tablet.jpg 1x, ./img/header/hero-photo-2/hero-photo-2@2x-tablet.jpg 2x">
-                <img src="./img/header/hero-photo-2/hero-photo-2@1x-desktop.jpg"
+                <img loading="lazy" src="./img/header/hero-photo-2/hero-photo-2@1x-desktop.jpg"
                   srcset="./img/header/hero-photo-2/hero-photo-2@2x-desktop.jpg 2x" alt="">
               </picture>
             </div>
@@ -201,7 +203,7 @@
                       <picture>
                         <source type="image/webp"
                           srcset="./img/header/hero-card-1/hero-card-1@1x.webp 1x, ./img/header/hero-card-1/hero-card-1@2x.webp 2x">
-                        <img src="./img/header/hero-card-1/hero-card-1@1x.png"
+                        <img loading="lazy" src="./img/header/hero-card-1/hero-card-1@1x.png"
                           srcset="./img/header/hero-card-1/hero-card-1@2x.png 2x" width="308" height="407"
                           alt="Голубое озеро среди гор.">
                       </picture>
@@ -210,7 +212,7 @@
                       <picture>
                         <source type="image/webp"
                           srcset="./img/header/hero-card-2/hero-card-2@1x.webp 1x, ./img/header/hero-card-2/hero-card-2@2x.webp 2x">
-                        <img src="./img/header/hero-card-2/hero-card-2@1x.png"
+                        <img loading="lazy" src="./img/header/hero-card-2/hero-card-2@1x.png"
                           srcset="./img/header/hero-card-2/hero-card-2@2x.png 2x" width="277" height="366"
                           alt="Путешественница в горах.">
                       </picture>
@@ -233,7 +235,7 @@
                   srcset="./img/header/hero-photo-3/hero-photo-3@1x-mobile.jpg 1x, ./img/header/hero-photo-3/hero-photo-3@2x-mobile.jpg 2x">
                 <source media="(max-width:1199px)"
                   srcset="./img/header/hero-photo-3/hero-photo-3@1x-tablet.jpg 1x, ./img/header/hero-photo-3/hero-photo-3@2x-tablet.jpg 2x">
-                <img src="./img/header/hero-photo-3/hero-photo-3@1x-desktop.jpg"
+                <img loading="lazy" src="./img/header/hero-photo-3/hero-photo-3@1x-desktop.jpg"
                   srcset="./img/header/hero-photo-3/hero-photo-3@2x-desktop.jpg 2x" alt="">
               </picture>
             </div>
@@ -282,7 +284,55 @@
       </div>
     </header>
     <main class="main">
-      <section class="upcoming-tours">
+      <div class="main__background-1-container">
+        <picture>
+          <source media="(max-width:767px)" type="image/webp"
+            srcset="./img/main/main__background-1/main__background-1@1x-mobile.webp 1x, ./img/main/main__background-1/main__background-1@2x-mobile.webp 2x">
+          <source media="(max-width:1199px)" type="image/webp"
+            srcset="./img/main/main__background-1/main__background-1@1x-tablet.webp 1x, ./img/main/main__background-1/main__background-1@2x-tablet.webp 2x">
+          <source type="image/webp"
+            srcset="./img/main/main__background-1/main__background-1@1x-desktop.webp 1x, ./img/main/main__background-1/main__background-1@2x-desktop.webp 2x">
+          <source media="(max-width:767px)"
+            srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-mobile.jpg 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-mobile.jpg 2x">
+          <source media="(max-width:1199px)"
+            srcset="./img/main/main__background-1/main__background-1@1x-tablet.jpg 1x, ./img/main/main__background-1/main__background-1@2x-tablet.jpg 2x">
+          <img loading="lazy" src="./img/main/main__background-1/main__background-1@1x-desktop.jpg" alt="" width="602"
+            height="1364" srcset="./img/main/main__background-1/main__background-1@2x-desktop.jpg 2x">
+        </picture>
+      </div>
+      <div class="main__background-2-container">
+        <picture>
+          <source type="image/webp"
+            srcset="./img/main/main__background-2/main__background-2@1x.webp 1x, ./img/main/main__background-2/main__background-2@2x.webp 2x">
+          <img loading="lazy" src="./img/main/main__background-2/main__background-2@1x.png" alt="" width="705"
+            height="391" srcset="./img/main/main__background-2/main__background-2@2x.png 2x">
+        </picture>
+      </div>
+      <div class="main__background-3-container">
+        <picture>
+          <source type="image/webp"
+            srcset="./img/main/main__background-3/main__background-3@1x.webp 1x, ./img/main/main__background-3/main__background-3@2x.webp 2x">
+          <img loading="lazy" src="./img/main/main__background-2/main__background-2@1x.png" alt="" width="602"
+            height="263" srcset="./img/main/main__background-3/main__background-3@2x.png 2x">
+        </picture>
+      </div>
+      <div class="main__background-4-container">
+        <picture>
+          <source type="image/webp"
+            srcset="./img/main/main__background-4/main__background-4@1x.webp 1x, ./img/main/main__background-4/main__background-4@2x.webp 2x">
+          <img loading="lazy" src="./img/main/main__background-2/main__background-2@1x.png" alt="" width="418"
+            height="279" srcset="./img/main/main__background-4/main__background-4@2x.png 2x">
+        </picture>
+      </div>
+      <div class="main__background-5-container">
+        <picture>
+          <source type="image/webp"
+            srcset="./img/main/main__background-5/main__background-5@1x.webp 1x, ./img/main/main__background-5/main__background-5@2x.webp 2x">
+          <img loading="lazy" src="./img/main/main__background-2/main__background-2@1x.png" alt="" width="618"
+            height="280" srcset="./img/main/main__background-5/main__background-5@2x.png 2x">
+        </picture>
+      </div>
+      <section class="upcoming-tours" id="upcoming-tours">
         <div class="container">
           <div class="upcoming-tours__container">
             <div class="upcoming-tours__title-button-container">
@@ -290,13 +340,15 @@
                 Ближайшие туры
               </h2>
               <div class="upcoming-tours__button-container button-swiper">
-                <button class="swiper-button-prev upcoming-tours__button-prev button-swiper__button">
+                <button class="swiper-button-prev upcoming-tours__button-prev button-swiper__button"
+                  aria-label="Пролистать слайд вперед">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
                 </button>
                 <button
-                  class="swiper-button-next button-swiper__button upcoming-tours__button-next button-swiper__button--next">
+                  class="swiper-button-next button-swiper__button upcoming-tours__button-next button-swiper__button--next"
+                  aria-label="Пролистать слайд назад">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
@@ -481,7 +533,7 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background@2x.webp 2x">
-                      <img
+                      <img loading="lazy"
                         src="./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background.jpg"
                         width="380" height="412" alt=""
                         srcset="./img/main/upcoming-tours-background/upcoming-tours-background-fisht/fisht-background@2x.jpg 2x">
@@ -567,7 +619,7 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.webp 2x">
-                      <img
+                      <img loading="lazy"
                         src="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.jpg"
                         width="380" height="412" alt=""
                         srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.jpg 2x">
@@ -653,7 +705,7 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.webp 1x, ./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.webp 2x">
-                      <img
+                      <img loading="lazy"
                         src="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background.jpg"
                         width="380" height="412" alt=""
                         srcset="./img/main/upcoming-tours-background/upcoming-tours-background-elbrus/elbrus-background@2x.jpg 2x">
@@ -745,7 +797,7 @@
           </div>
         </div>
       </section>
-      <section class="training">
+      <section class="training" id="training">
         <div class="container">
           <div class="training__container">
             <h2 class="training__title title-second title-second--training">
@@ -760,13 +812,15 @@
                 Наши инструкторы
               </h3>
               <div class="training__button-container button-swiper">
-                <button class="swiper-button-prev training__button-prev button-swiper__button">
+                <button class="swiper-button-prev training__button-prev button-swiper__button"
+                  aria-label="Пролистать слайд вперед">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
                 </button>
                 <button
-                  class="swiper-button-next button-swiper__button training__button-next button-swiper__button--next">
+                  class="swiper-button-next button-swiper__button training__button-next button-swiper__button--next"
+                  aria-label="Пролистать слайд назад">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
@@ -788,7 +842,7 @@
                         srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-mobile.jpg 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-mobile.jpg 2x">
                       <source media="(max-width:1199px)"
                         srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x-tablet.jpg 1x, ./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x-tablet.jpg 2x">
-                      <img src="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x.jpg"
+                      <img loading="lazy" src="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@1x.jpg"
                         alt="Александр Прокофьев" width="238" height="212"
                         srcset="./img/main/instructors/instructor-prokofiev/instructor-prokofiev@2x.jpg 2x">
                     </picture>
@@ -822,7 +876,8 @@
                         srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x-mobile.jpg 1x, ./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x-mobile.jpg 2x">
                       <source media="(max-width:1199px)"
                         srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x-tablet.jpg 1x, ./img/main/instructors/instructor-afinogenova/instructor-prokofiev@2x-tablet.jpg 2x">
-                      <img src="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x.jpg"
+                      <img loading="lazy"
+                        src="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@1x.jpg"
                         alt="Александр Прокофьев" width="238" height="212"
                         srcset="./img/main/instructors/instructor-afinogenova/instructor-afinogenova@2x.jpg 2x">
                     </picture>
@@ -857,7 +912,8 @@
                         srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x-mobile.jpg 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x-mobile.jpg 2x">
                       <source media="(max-width:1199px)"
                         srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x-tablet.jpg 1x, ./img/main/instructors/instructor-kolesnichenko/instructor-prokofiev@2x-tablet.jpg 2x">
-                      <img src="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x.jpg"
+                      <img loading="lazy"
+                        src="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@1x.jpg"
                         alt="Александр Прокофьев" width="238" height="212"
                         srcset="./img/main/instructors/instructor-kolesnichenko/instructor-kolesnichenko@2x.jpg 2x">
                     </picture>
@@ -892,7 +948,8 @@
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x-mobile.jpg 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x-mobile.jpg 2x">
                       <source media="(max-width:1199px)"
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x-tablet.jpg 1x, ./img/main/instructors/instructor-kaygorodov/instructor-prokofiev@2x-tablet.jpg 2x">
-                      <img src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
+                      <img loading="lazy"
+                        src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
                         alt="Александр Прокофьев" width="238" height="212"
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.jpg 2x">
                     </picture>
@@ -919,7 +976,8 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.webp 2x">
-                      <img src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
+                      <img loading="lazy"
+                        src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
                         alt="Александр Прокофьев" width="238" height="212"
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.jpg 2x">
                     </picture>
@@ -946,7 +1004,8 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.webp 1x, ./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.webp 2x">
-                      <img src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
+                      <img loading="lazy"
+                        src="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@1x.jpg"
                         alt="Александр Прокофьев" width="238" height="212"
                         srcset="./img/main/instructors/instructor-kaygorodov/instructor-kaygorodov@2x.jpg 2x">
                     </picture>
@@ -970,7 +1029,7 @@
                 </div>
               </div>
             </div>
-            <h3 class="training__subtitle subtitle">
+            <h3 class="training__subtitle training__subtitle--padding-left subtitle">
               Процесс обучения
             </h3>
             <div class="training__learning-process">
@@ -1014,7 +1073,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="about-us__container">
           <div class="about-us__background-image">
             <picture>
@@ -1028,8 +1087,8 @@
                 srcset="./img/main/about-us-background/about-us-background@1x-mobile.jpg 1x, ./img/main/about-us-background/about-us-background@2x-mobile.jpg 2x">
               <source media="(max-width:1199px)"
                 srcset="./img/main/about-us-background/about-us-background@1x-tablet.jpg 1x, ./img/main/about-us-background/about-us-background@2x-tablet.jpg 2x">
-              <img src="./img/main/about-us-background/about-us-background@1x-desktop.jpg" alt="" width="808"
-                height="474" srcset="./img/main/about-us-background/about-us-background@2x-desktop.jpg 2x">
+              <img loading="lazy" src="./img/main/about-us-background/about-us-background@1x-desktop.jpg" alt=""
+                width="808" height="474" srcset="./img/main/about-us-background/about-us-background@2x-desktop.jpg 2x">
             </picture>
           </div>
           <div class="container">
@@ -1071,7 +1130,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="reviews__container">
           <div class="container">
             <div class="reviews__title-button-container">
@@ -1079,13 +1138,15 @@
                 Отзывы
               </h2>
               <div class="reviews__button-container button-swiper">
-                <button class="swiper-button-prev reviews__button-prev button-swiper__button">
+                <button class="swiper-button-prev reviews__button-prev button-swiper__button"
+                  aria-label="Пролистать слайд вперед">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
                 </button>
                 <button
-                  class="swiper-button-next button-swiper__button reviews__button-next button-swiper__button--next">
+                  class="swiper-button-next button-swiper__button reviews__button-next button-swiper__button--next"
+                  aria-label="Пролистать слайд назад">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
@@ -1110,7 +1171,7 @@
                           srcset="./img/main/reviews/frolov-alexander/frolov-alexander@2x-mobile.jpg 1x, ./img/main/reviews/frolov-alexander/frolov-alexander@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/frolov-alexander/frolov-alexander@1x-tablet.jpg 1x, ./img/main/reviews/frolov-alexander/frolov-alexander@2x-tablet.jpg 2x">
-                        <img src="./img/main/reviews/frolov-alexander/frolov-alexander@1x-desktop.jpg"
+                        <img loading="lazy" src="./img/main/reviews/frolov-alexander/frolov-alexander@1x-desktop.jpg"
                           alt="Фролов Александр." width="258" height="253"
                           srcset="./img/main/reviews/frolov-alexander/frolov-alexander@2x-desktop.jpg 2x">
                       </picture>
@@ -1155,8 +1216,8 @@
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-mobile.jpg 1x, ./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-tablet.jpg 1x, ./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-tablet.jpg 2x">
-                        <img src="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-desktop.jpg" alt="Иван Соловьев."
-                          width="258" height="253"
+                        <img loading="lazy" src="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-desktop.jpg"
+                          alt="Иван Соловьев." width="258" height="253"
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-desktop.jpg 2x">
                       </picture>
                     </div>
@@ -1200,7 +1261,7 @@
                           srcset="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-mobile.jpg 1x, ./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@1x-tablet.jpg 1x, ./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-tablet.jpg 2x">
-                        <img src="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@1x-desktop.jpg"
+                        <img loading="lazy" src="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@1x-desktop.jpg"
                           alt="Евгения Баженова." width="258" height="253"
                           srcset="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-desktop.jpg 2x">
                       </picture>
@@ -1245,8 +1306,8 @@
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@2x-mobile.jpg 1x, ./img/main/reviews/elena-pirogova/elena-pirogova@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@1x-tablet.jpg 1x, ./img/main/reviews/elena-pirogova/elena-pirogova@2x-tablet.jpg 2x">
-                        <img src="./img/main/reviews/elena-pirogova/elena-pirogova@1x-desktop.jpg" alt="Елена Пирогова."
-                          width="258" height="253"
+                        <img loading="lazy" src="./img/main/reviews/elena-pirogova/elena-pirogova@1x-desktop.jpg"
+                          alt="Елена Пирогова." width="258" height="253"
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@2x-desktop.jpg 2x">
                       </picture>
                     </div>
@@ -1379,13 +1440,14 @@
             </div>
           </div>
           <div class="advantages__button-container button-swiper">
-            <button class="swiper-button-prev advantages__button-prev button-swiper__button">
+            <button class="swiper-button-prev advantages__button-prev button-swiper__button"
+              aria-label="Пролистать слайд вперед">
               <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                 <use fill="white" href="./img/sprite.svg#arrow"></use>
               </svg>
             </button>
-            <button
-              class="swiper-button-next button-swiper__button advantages__button-next button-swiper__button--next">
+            <button class="swiper-button-next button-swiper__button advantages__button-next button-swiper__button--next"
+              aria-label="Пролистать слайд назад">
               <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                 <use fill="white" href="./img/sprite.svg#arrow"></use>
               </svg>
@@ -1393,27 +1455,29 @@
           </div>
         </div>
       </section>
-      <section class="photo-gallery">
+      <section class="photo-gallery" id="photo-gallery">
         <div class="photo-gallery__container">
           <div class="container">
             <h2 class="photo-gallery__title title-second title-second--photo-gallery">
               Фотогалерея
             </h2>
             <div class="photo-gallery__wrapper">
-              <div class="photo-gallery__description">
+              <div class="photo-gallery__description-container">
                 <p>
                   Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
                   Лучшие фотографии украсят этот раздел нашего сайта.
                 </p>
               </div>
               <div class="photo-gallery__button-container button-swiper">
-                <button class="swiper-button-prev photo-gallery__button-prev button-swiper__button">
+                <button class="swiper-button-prev photo-gallery__button-prev button-swiper__button"
+                  aria-label="Пролистать слайд вперед">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
                 </button>
                 <button
-                  class="swiper-button-next button-swiper__button photo-gallery__button-next button-swiper__button--next">
+                  class="swiper-button-next button-swiper__button photo-gallery__button-next button-swiper__button--next"
+                  aria-label="Пролистать слайд назад">
                   <svg class="button-swiper__button-icon" width="14" height="8" focusable="false" aria-hidden="true">
                     <use fill="white" href="./img/sprite.svg#arrow"></use>
                   </svg>
@@ -1423,24 +1487,24 @@
           </div>
           <div class="swiper photo-gallery__swiper">
             <div class="swiper-wrapper photo-gallery__swiper-wrapper">
-              <div class="swiper-slide photo-gallery__swiper-slide">
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--narrow-1">
                 <div class="photo-gallery__photo-container photo-gallery__photo-container--max">
                   <picture>
                     <source type="image/webp"
                       srcset="./img/main/photo-gallery/photo-gallery-1/photo-gallery-1@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-1/photo-gallery-1@2x.webp 2x">
-                    <img src="./img/main/photo-gallery/photo-gallery-1/photo-gallery-1@1x.jpg"
+                    <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-1/photo-gallery-1@1x.jpg"
                       srcset="./img/main/photo-gallery/photo-gallery-1/photo-gallery-1@2x.jpg 2x" width="275"
                       height="449" alt="Смотрю далеко в горы.">
                   </picture>
                 </div>
               </div>
-              <div class="swiper-slide photo-gallery__swiper-slide">
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--wide">
                 <div class="photo-gallery__photo-wrapper">
                   <div class="photo-gallery__photo-container photo-gallery__photo-container--top">
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/photo-gallery/photo-gallery-2/photo-gallery-2@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-2/photo-gallery-2@2x.webp 2x">
-                      <img src="./img/main/photo-gallery/photo-gallery-2/photo-gallery-2@1x.jpg"
+                      <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-2/photo-gallery-2@1x.jpg"
                         srcset="./img/main/photo-gallery/photo-gallery-2/photo-gallery-2@2x.jpg 2x" width="298"
                         height="179" alt="Ночные посиделки у костра.">
                     </picture>
@@ -1449,31 +1513,31 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/photo-gallery/photo-gallery-3/photo-gallery-3@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-3/photo-gallery-3@2x.webp 2x">
-                      <img src="./img/main/photo-gallery/photo-gallery-3/photo-gallery-3@1x.jpg"
+                      <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-3/photo-gallery-3@1x.jpg"
                         srcset="./img/main/photo-gallery/photo-gallery-3/photo-gallery-3@2x.jpg 2x" width="298"
                         height="265" alt="Ориентирование на местности по компасы.">
                     </picture>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide photo-gallery__swiper-slide">
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--narrow-2">
                 <div class="photo-gallery__photo-container photo-gallery__photo-container--max">
                   <picture>
                     <source type="image/webp"
                       srcset="./img/main/photo-gallery/photo-gallery-4/photo-gallery-4@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-4/photo-gallery-4@2x.webp 2x">
-                    <img src="./img/main/photo-gallery/photo-gallery-4/photo-gallery-4@1x.jpg"
-                      srcset="./img/main/photo-gallery/photo-gallery-4/photo-gallery-4@2x.jpg 2x" width="275"
+                    <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-4/photo-gallery-4@1x.jpg"
+                      srcset="./img/main/photo-gallery/photo-gallery-4/photo-gallery-4@2x.jpg 2x" width="272"
                       height="449" alt="Спуск с горы по веревке.">
                   </picture>
                 </div>
               </div>
-              <div class="swiper-slide photo-gallery__swiper-slide">
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--wide">
                 <div class="photo-gallery__photo-wrapper">
                   <div class="photo-gallery__photo-container photo-gallery__photo-container--top">
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@2x.webp 2x">
-                      <img src="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@1x.jpg"
+                      <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@1x.jpg"
                         srcset="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@2x.jpg 2x" width="298"
                         height="179" alt="Горная речка.">
                     </picture>
@@ -1482,27 +1546,169 @@
                     <picture>
                       <source type="image/webp"
                         srcset="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@2x.webp 2x">
-                      <img src="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@1x.jpg"
+                      <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@1x.jpg"
                         srcset="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@2x.jpg 2x" width="298"
                         height="265" alt="Звездное небо над палаткой.">
                     </picture>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide photo-gallery__swiper-slide">
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--narrow-3">
                 <div class="photo-gallery__photo-container photo-gallery__photo-container--max">
                   <picture>
                     <source type="image/webp"
                       srcset="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@2x.webp 2x">
-                    <img src="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@1x.jpg"
-                      srcset="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@2x.jpg 2x" width="275"
+                    <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@1x.jpg"
+                      srcset="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@2x.jpg 2x" width="276"
+                      height="449" alt="Разведение костра у реки.">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--wide">
+                <div class="photo-gallery__photo-wrapper">
+                  <div class="photo-gallery__photo-container photo-gallery__photo-container--top">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@2x.webp 2x">
+                      <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@1x.jpg"
+                        srcset="./img/main/photo-gallery/photo-gallery-5/photo-gallery-5@2x.jpg 2x" width="298"
+                        height="179" alt="Горная речка.">
+                    </picture>
+                  </div>
+                  <div class="photo-gallery__photo-container photo-gallery__photo-container--bottom">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@2x.webp 2x">
+                      <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@1x.jpg"
+                        srcset="./img/main/photo-gallery/photo-gallery-6/photo-gallery-6@2x.jpg 2x" width="298"
+                        height="265" alt="Звездное небо над палаткой.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide photo-gallery__swiper-slide photo-gallery__swiper-slide--narrow-3">
+                <div class="photo-gallery__photo-container photo-gallery__photo-container--max">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@1x.webp 1x, ./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@2x.webp 2x">
+                    <img loading="lazy" src="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@1x.jpg"
+                      srcset="./img/main/photo-gallery/photo-gallery-7/photo-gallery-7@2x.jpg 2x" width="276"
                       height="449" alt="Разведение костра у реки.">
                   </picture>
                 </div>
               </div>
             </div>
           </div>
-
+        </div>
+      </section>
+      <section class="questions">
+        <div class="questions__background-container">
+          <picture>
+            <source media="(max-width:350px)" type="image/webp"
+              srcset="./img/main/questions__background/questions__background@1x-mobile.webp 1x, ./img/main/questions__background/questions__background@2x-mobile.webp 2x">
+            <source media="(max-width:800px)" type="image/webp"
+              srcset="./img/main/questions__background/questions__background@1x-tablet.webp 1x, ./img/main/questions__background/questions__background@2x-tablet.webp 2x">
+            <source type="image/webp"
+              srcset="./img/main/questions__background/questions__background@1x-desktop.webp 1x, ./img/main/questions__background/questions__background@2x-desktop.webp 2x">
+            <source media="(max-width:350px)"
+              srcset="./img/main/questions__background/questions__background@1x-mobile.jpg 1x, ./img/main/questions__background/questions__background@2x-mobile.jpg 2x">
+            <source media="(max-width:800px)"
+              srcset="./img/main/questions__background/questions__background@1x-tablet.jpg 1x, ./img/main/questions__background/questions__background@2x-tablet.jpg 2x">
+            <img loading="lazy" src="./img/main/questions__background/questions__background@1x-desktop.jpg" alt=""
+              srcset="./img/main/questions__background/questions__background@2x-desktop.jpg 2x">
+          </picture>
+        </div>
+        <div class="questions__container">
+          <div class="container">
+            <h2 class="questions__title title-second title-second--white">
+              Остались вопросы?
+            </h2>
+            <div class="questions__description">
+              <p>
+                Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.
+              </p>
+            </div>
+            <div class="questions__form-container" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="get" novalidate>
+                <div class="questions__field-container" data-limitation="name" data-required data-validate-type="text"
+                  data-message-base="Введите имя">
+                  <input type="text" placeholder="Как к вам обращаться?" name="name" aria-label="Как к вам обращаться?."
+                    autocomplete="new-password" required>
+                </div>
+                <div class="questions__field-container" data-required data-validate-type="phone"
+                  data-message-base="Введите телефон">
+                  <input type="text" placeholder="Телефон" name="tel" aria-label="Введите ваш телефон."
+                    autocomplete="off" required>
+                </div>
+                <input type="submit" value="Отправить">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__container">
+            <div class="contacts__wrapper">
+              <h2 class="contacts__title title-second title-second--contacts">
+                Контакты
+              </h2>
+              <div class="contacts__description">
+                <p>
+                  Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости.
+                  Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.
+                </p>
+              </div>
+              <div class="contacts__list-container">
+                <ul>
+                  <li>
+                    <svg width="26" height="26" focusable="false" aria-hidden="true">
+                      <use href="./img/sprite.svg#telephone"></use>
+                    </svg>
+                    <div>
+                      <h3>
+                        Телефон
+                      </h3>
+                      <address href="tel:8-983-745-4545">
+                        8 983 745 45 45
+                      </address>
+                    </div>
+                  </li>
+                  <li>
+                    <svg width="26" height="26" focusable="false" aria-hidden="true">
+                      <use href="./img/sprite.svg#message"></use>
+                    </svg>
+                    <div>
+                      <h3>
+                        E-mail
+                      </h3>
+                      <address href="malito:info@lifetour.com">
+                        info@lifetour.com
+                      </address>
+                    </div>
+                  </li>
+                  <li>
+                    <svg width="26" height="26" focusable="false" aria-hidden="true">
+                      <use href="./img/sprite.svg#geolocation"></use>
+                    </svg>
+                    <div>
+                      <h3>
+                        Адрес
+                      </h3>
+                      <address>
+                        г. Москва, пр-т Мира, д.&nbsp;14, офис 101
+                      </address>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <iframe class="contacts__maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711.1878470933227!2d37.63750005581743!3d55.816904711310634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535df0c78511b%3A0x5b944a02507c2328!2z0JrRg9C70LjQvdCw0YDQvdC-0LUg0KfRgtC40LLQvg!5e0!3m2!1sru!2sru!4v1694709684575!5m2!1sru!2sru"
+              width="585" height="324" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
