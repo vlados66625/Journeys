@@ -1,7 +1,7 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { addEvtVideo } from './modules/play-button';
-import { addEvtToggleButton } from './modules/toggle-button';
-import { duplicatesAdvantages } from './modules/duplicatesAdvantages';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {addEvtVideo} from './modules/play-button';
+import {addEvtToggleButton} from './modules/toggle-button';
+import {duplicatesAdvantages} from './modules/duplicatesAdvantages';
 
 // ---------------------------------
 

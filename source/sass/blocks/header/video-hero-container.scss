@@ -8,6 +8,7 @@
     width: 442px;
     height: 300px;
   }
+
   @include vp-767 {
     display: none;
   }
@@ -30,19 +31,10 @@
   padding: 0;
   background-color: transparent;
   user-select: none;
-}
 
-.video-hero-container__button-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  border-radius: 50%;
-}
+  @include focus {
+    outline: none;
 
-.video-hero-container__button-icon {
-  @include hover-focus {
     & .video-hero-container__button-icon-circle {
       fill: none;
       stroke: $color-resolution-blue;
@@ -57,6 +49,26 @@
 }
 
 .video-hero-container__button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 50%;
+
+  @include hover-focus {
+    & .video-hero-container__button-icon-circle {
+      fill: none;
+      stroke: $color-resolution-blue;
+    }
+
+    & .video-hero-container__button-icon-triangle {
+      fill: $color-default-white;
+      stroke-width: 1px;
+      stroke: $color-default-black;
+    }
+  }
+
   @include active {
     & .video-hero-container__button-icon-circle {
       fill: $color-resolution-blue;

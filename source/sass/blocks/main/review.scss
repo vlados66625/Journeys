@@ -38,7 +38,7 @@
 
 .review__image-container img {
   object-fit: cover;
-  
+
   @include vp-1199 {
     width: 186px;
     height: 237px;
@@ -51,6 +51,8 @@
 }
 
 .review__text-content-conteiner {
+  display: flex;
+  flex-direction: column;
   padding: 13px 0;
 
   @include vp-1199 {
@@ -77,6 +79,10 @@
   }
 }
 
+.review__author-container {
+  margin-top: auto;
+}
+
 .review__author-container p {
   margin: 27px 0 7px 0;
   font-size: 13px;
@@ -90,6 +96,14 @@
 
   @include vp-767 {
     margin: 16px 0 7px;
+  }
+}
+
+.review__age-place-container {
+  margin-bottom: 4px;
+
+  @include vp-1199 {
+    margin: 0;
   }
 }
 

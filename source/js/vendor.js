@@ -1,8 +1,8 @@
 // Swiper 10.2.0
 import './vendor/focus-visible-polyfill';
 import Swiper from './vendor/swiper';
-import { addSlowTransitionLinks } from './vendor/addSlowTransitionLinks';
-import { Form } from './vendor/form-validate/form';
+import {addSlowTransitionLinks} from './vendor/addSlowTransitionLinks';
+import {Form} from './vendor/form-validate/form';
 
 window.addEventListener('DOMContentLoaded', () => {
   addSlowTransitionLinks();

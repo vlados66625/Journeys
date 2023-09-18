@@ -1,6 +1,7 @@
 .questions {
   position: relative;
 }
+
 .questions__container {
   box-sizing: border-box;
   padding: 313px 0 0 0;
@@ -23,6 +24,7 @@
   inset: 0;
   z-index: -1;
 }
+
 .questions__background-container img {
   width: 100%;
   height: 100%;
@@ -50,6 +52,7 @@
     margin: 0 auto;
   }
 }
+
 .questions__description p {
   margin: 0 0 43px 0;
   padding-right: 18px;
@@ -123,6 +126,21 @@
   @include vp-767 {
     width: 100%;
   }
+
+  @include hover {
+    outline-offset: -1px;
+    outline: 1px solid $color-royal-blue;
+  }
+
+  @include focus {
+    outline-offset: -1px;
+    outline: 1px solid $color-resolution-blue;
+  }
+
+  @include active {
+    outline-offset: -1px;
+    outline: 1px solid $color-resolution-blue;
+  }
 }
 
 .questions__form-container input[type="submit"] {
@@ -141,4 +159,9 @@
     margin: 0;
     padding: 18px;
   }
+}
+
+.questions__field-container.is-invalid input:not([type="submit"]) {
+  outline-offset: -1px;
+  outline: 1px solid #ff121f;
 }

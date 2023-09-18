@@ -128,6 +128,11 @@
   font-weight: 300;
   line-height: 12px;
   cursor: default;
+  margin-bottom: 7px;
+
+  @include vp-767 {
+    margin-bottom: 6px;
+  }
 }
 
 .tourist-card__data-container dd {
@@ -155,14 +160,6 @@
 
 .tourist-card__data-container {
   margin: 0;
-}
-
-.tourist-card__data-container dt {
-  margin-bottom: 7px;
-
-  @include vp-767 {
-    margin-bottom: 6px;
-  }
 }
 
 .tourist-card__star {

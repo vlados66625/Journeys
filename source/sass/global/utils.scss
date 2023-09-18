@@ -1,5 +1,6 @@
 .wrapper {
   position: relative;
+  overflow-y: clip;
 
   min-width: $vp-320;
   display: flex;

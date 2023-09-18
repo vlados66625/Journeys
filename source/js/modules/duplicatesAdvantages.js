@@ -26,4 +26,4 @@ const duplicatesAdvantages = (() => {
   };
 })();
 
-export { duplicatesAdvantages };
+export {duplicatesAdvantages};

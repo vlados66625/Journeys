@@ -1216,8 +1216,8 @@
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-mobile.jpg 1x, ./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-tablet.jpg 1x, ./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-tablet.jpg 2x">
-                        <img src="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-desktop.jpg"
-                          alt="Иван Соловьев." width="258" height="253"
+                        <img src="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-desktop.jpg" alt="Иван Соловьев."
+                          width="258" height="253"
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-desktop.jpg 2x">
                       </picture>
                     </div>
@@ -1306,8 +1306,8 @@
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@2x-mobile.jpg 1x, ./img/main/reviews/elena-pirogova/elena-pirogova@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@1x-tablet.jpg 1x, ./img/main/reviews/elena-pirogova/elena-pirogova@2x-tablet.jpg 2x">
-                        <img src="./img/main/reviews/elena-pirogova/elena-pirogova@1x-desktop.jpg"
-                          alt="Елена Пирогова." width="258" height="253"
+                        <img src="./img/main/reviews/elena-pirogova/elena-pirogova@1x-desktop.jpg" alt="Елена Пирогова."
+                          width="258" height="253"
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@2x-desktop.jpg 2x">
                       </picture>
                     </div>
@@ -1630,13 +1630,11 @@
             </div>
             <div class="questions__form-container" data-form-validate data-callback="base">
               <form action="https://echo.htmlacademy.ru/" method="get" novalidate>
-                <div class="questions__field-container" data-limitation="name" data-required data-validate-type="text"
-                  data-message-base="Введите имя">
+                <div class="questions__field-container" data-limitation="name" data-required data-validate-type="text">
                   <input type="text" placeholder="Как к вам обращаться?" name="name" aria-label="Как к вам обращаться?."
                     autocomplete="new-password" required>
                 </div>
-                <div class="questions__field-container" data-required data-validate-type="phone"
-                  data-message-base="Введите телефон">
+                <div class="questions__field-container" data-required data-validate-type="phone">
                   <input type="text" placeholder="Телефон" name="tel" aria-label="Введите ваш телефон."
                     autocomplete="off" required>
                 </div>
@@ -1669,8 +1667,10 @@
                       <h3>
                         Телефон
                       </h3>
-                      <address href="tel:8-983-745-4545">
-                        8 983 745 45 45
+                      <address>
+                        <a href="tel:8-983-745-4545">
+                          8 983 745 45 45
+                        </a>
                       </address>
                     </div>
                   </li>
@@ -1682,8 +1682,10 @@
                       <h3>
                         E-mail
                       </h3>
-                      <address href="malito:info@lifetour.com">
-                        info@lifetour.com
+                      <address>
+                        <a href="mailto:info@lifetour.com">
+                          info@lifetour.com
+                        </a>
                       </address>
                     </div>
                   </li>
@@ -1713,18 +1715,13 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container container--main-footer">
         <div class="main-footer__container">
           <div class="main-footer__wrapper">
             <div class="main-footer__wrapper-logo">
-              <a href="./index.html" aria-label="SUPERGYM">
-                <svg width="205" height="62" focusable="false" aria-hidden="true">
-                  <use href="./img/sprite.svg#logo"></use>
-                </svg>
-              </a>
-              <a class="header-top__logo" href="./index.html">
-                <svg class="header-top__logo-icon" width="205" height="62" focusable="false" aria-hidden="true">
-                  <use fill="white" href="./img/sprite.svg#logo"></use>
+              <a class="main-footer__logo" href="./index.html">
+                <svg class="main-footer__logo-icon" width="205" height="62" focusable="false" aria-hidden="true">
+                  <use fill="#2D383F" href="./img/sprite.svg#logo"></use>
                 </svg>
               </a>
             </div>
@@ -1751,8 +1748,10 @@
               </ul>
             </div>
             <div class="main-footer__telephone">
-              <address href="tel:8-800-725-3232">
-                8 800 725 32 32
+              <address>
+                <a href="tel:+78007253232">
+                  8 800 725 32 32
+                </a>
               </address>
             </div>
           </div>
@@ -1768,14 +1767,14 @@
               <li>
                 <a href="#" aria-label="одноклассники">
                   <svg width="9" height="16" focusable="false" aria-hidden="true">
-                    <use href="./img/sprite.svg#ok"></use>
+                    <use fill="#2D383F" href="./img/sprite.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="reddit">
                   <svg width="14" height="15" focusable="false" aria-hidden="true">
-                    <use href="./img/sprite.svg#reddit"></use>
+                    <use fill="#2D383F" href="./img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
               </li>
