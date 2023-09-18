@@ -1216,7 +1216,7 @@
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-mobile.jpg 1x, ./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-tablet.jpg 1x, ./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-tablet.jpg 2x">
-                        <img loading="lazy" src="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-desktop.jpg"
+                        <img src="./img/main/reviews/ivan-solovyov/ivan-solovyov@1x-desktop.jpg"
                           alt="Иван Соловьев." width="258" height="253"
                           srcset="./img/main/reviews/ivan-solovyov/ivan-solovyov@2x-desktop.jpg 2x">
                       </picture>
@@ -1261,7 +1261,7 @@
                           srcset="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-mobile.jpg 1x, ./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@1x-tablet.jpg 1x, ./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-tablet.jpg 2x">
-                        <img loading="lazy" src="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@1x-desktop.jpg"
+                        <img src="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@1x-desktop.jpg"
                           alt="Евгения Баженова." width="258" height="253"
                           srcset="./img/main/reviews/evgenia-bazhenova/evgenia-bazhenova@2x-desktop.jpg 2x">
                       </picture>
@@ -1306,7 +1306,7 @@
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@2x-mobile.jpg 1x, ./img/main/reviews/elena-pirogova/elena-pirogova@2x-mobile.jpg 2x">
                         <source media="(max-width:1199px)"
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@1x-tablet.jpg 1x, ./img/main/reviews/elena-pirogova/elena-pirogova@2x-tablet.jpg 2x">
-                        <img loading="lazy" src="./img/main/reviews/elena-pirogova/elena-pirogova@1x-desktop.jpg"
+                        <img src="./img/main/reviews/elena-pirogova/elena-pirogova@1x-desktop.jpg"
                           alt="Елена Пирогова." width="258" height="253"
                           srcset="./img/main/reviews/elena-pirogova/elena-pirogova@2x-desktop.jpg 2x">
                       </picture>
@@ -1713,52 +1713,79 @@
       </section>
     </main>
     <footer class="main-footer">
-      <!-- <div class="container">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__wrapper-logo">
-            <a href="index.html" aria-label="SUPERGYM">
-              <svg width="88" height="32" focusable="false" aria-hidden="true">
-                <use href="./img/sprite.svg#logo"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="main-footer__links">
-            <ul>
-              <li></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Абонементы</a></li>
-              <li><a href="#">Акции</a></li>
-              <li><a href="#">Tренеры</a></li>
-              <li><a href="#">Расписание</a></li>
-            </ul>
+      <div class="container">
+        <div class="main-footer__container">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__wrapper-logo">
+              <a href="./index.html" aria-label="SUPERGYM">
+                <svg width="205" height="62" focusable="false" aria-hidden="true">
+                  <use href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+              <a class="header-top__logo" href="./index.html">
+                <svg class="header-top__logo-icon" width="205" height="62" focusable="false" aria-hidden="true">
+                  <use fill="white" href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="main-footer__links">
+              <ul>
+                <li>
+                  <a href="#upcoming-tours">Туры</a>
+                </li>
+                <li>
+                  <a href="#training">Обучение</a>
+                </li>
+                <li>
+                  <a href="#about-us">О нас</a>
+                </li>
+                <li>
+                  <a href="#reviews">Отзывы</a>
+                </li>
+                <li>
+                  <a href="#photo-gallery">Фотографии</a>
+                </li>
+                <li>
+                  <a href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-footer__telephone">
+              <address href="tel:8-800-725-3232">
+                8 800 725 32 32
+              </address>
+            </div>
           </div>
           <div class="main-footer__social-network social-network">
             <ul>
               <li>
                 <a href="#" aria-label="вконтакте">
-                  <svg width="15" height="15" focusable="false" aria-hidden="true">
-                    <use fill="none" href="./img/sprite.svg#vk"></use>
+                  <svg width="16" height="9" focusable="false" aria-hidden="true">
+                    <use fill="#2D383F" href="./img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="одноклассники">
-                  <svg width="10" height="17" focusable="false" aria-hidden="true">
+                  <svg width="9" height="16" focusable="false" aria-hidden="true">
                     <use href="./img/sprite.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="reddit">
-                  <svg width="15" height="15" focusable="false" aria-hidden="true">
+                  <svg width="14" height="15" focusable="false" aria-hidden="true">
                     <use href="./img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
+          <div class="main-footer__policy-conditionality">
+            <p>Политика конфиденциальности</p>
+          </div>
         </div>
-      </div> -->
+      </div>
     </footer>
   </div>
   <script src="./js/vendor.min.js" defer></script>
