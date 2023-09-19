@@ -1115,9 +1115,7 @@ button,
   }
 }
 .container--reviews {
-  padding-left: 5.86%;
   padding-right: 0;
-  max-width: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: min(79px, 5.86%);
