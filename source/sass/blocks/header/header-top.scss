@@ -92,18 +92,6 @@
     background-color: $color-default-white;
     z-index: -1;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      transform: translateY(100%);
-      bottom: 0;
-      height: 100000px;
-      z-index: -2;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
     @include vp-767 {
       top: -15px;
       padding: 100px 0 50px;
@@ -111,9 +99,28 @@
   }
 }
 
+.header-top__close-button {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 100000px;
+  z-index: -2;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
 .header-top__navigation ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 31px;
   list-style-type: none;

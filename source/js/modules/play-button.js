@@ -20,3 +20,9 @@ export const addEvtVideo = () => {
     });
   }
 };
+
+export const stopVideo = () => {
+  if (video) {
+    video.pause();
+  }
+};

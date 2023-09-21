@@ -4,6 +4,7 @@
 }
 
 .button-swiper__button {
+  cursor: pointer;
   position: relative;
   width: 37px;
   height: 35px;
@@ -18,6 +19,7 @@
   @include hover-focus {
     outline: 1px solid $color-resolution-blue;
     outline-offset: -1px;
+    background-color: $color-default-white;
 
     & .button-swiper__button-icon use {
       fill: $color-resolution-blue;

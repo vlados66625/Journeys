@@ -73,4 +73,17 @@
   width: 24px;
   height: 24px;
   outline: 1px solid rgba(2, 101, 193, 0.1);
+
+  @include hover-focus {
+    outline: $color-dark-slate-gray solid 1px;
+  }
+
+  @include active {
+    background-color: $color-royal-blue;
+    outline: none;
+
+    & use {
+      fill: $color-default-white;
+    }
+  }
 }

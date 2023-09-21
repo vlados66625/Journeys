@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   addEvtToggleButton();
-  addEvtVideo();
+
   duplicatesAdvantages();
 
   window.addEventListener('resize', duplicatesAdvantages);
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-
+    addEvtVideo();
   });
 });
 

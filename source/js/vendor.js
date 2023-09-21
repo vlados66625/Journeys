@@ -3,6 +3,7 @@ import './vendor/focus-visible-polyfill';
 import Swiper from './vendor/swiper';
 import {addSlowTransitionLinks} from './vendor/addSlowTransitionLinks';
 import {Form} from './vendor/form-validate/form';
+import {stopVideo} from './modules/play-button';
 
 window.addEventListener('DOMContentLoaded', () => {
   addSlowTransitionLinks();
@@ -14,6 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
       el: '.header-bottom__swiper-pagination',
       clickable: true,
     },
+  });
+
+  heroSwiper.on('slideChange', function () {
+    stopVideo();
   });
 
   const upcomingTours = new Swiper('.upcoming-tours__swiper', {
@@ -101,7 +106,6 @@ window.addEventListener('DOMContentLoaded', () => {
       photoGallerySwiper.params.spaceBetween = 3;
     }
   };
-
 
   updateSwiperOptions();
   window.addEventListener('resize', updateSwiperOptions);
